@@ -10,8 +10,8 @@ package:
 source:
   fn: coda_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/coda_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/coda/coda_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/coda_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/coda/coda_{{ version }}.tar.gz
   sha256: d41ff5731da6805170769dba75dd011ab33f916d15b2336001f279e21a524491
 
 
