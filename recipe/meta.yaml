@@ -14,22 +14,15 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/coda/coda_{{ version }}.tar.gz
   sha256: d41ff5731da6805170769dba75dd011ab33f916d15b2336001f279e21a524491
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
 
-
   # This is required to make R link correctly on Linux.
   rpaths:
     - lib/R/lib/
     - lib/
-
 
 requirements:
   build:
